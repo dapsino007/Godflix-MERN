@@ -1,4 +1,4 @@
-# Godflix-MERN
+# Godflix-MERN +JWT
 FullStack Mongodb, React.js, and Node.js application of Godflix (modified cloned of Netflix for Christian movies and sermons). 
 This application contains two react app (client and admin)running on separate ports, but connected via proxy to the same api folder.
 
