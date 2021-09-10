@@ -1,0 +1,114 @@
+.nav{
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.0);
+    font-size: 14px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+
+    &.scrolled{
+        background-color: var(--primary-color);
+    }
+
+    .container{
+        padding: 70px 30px;
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        height: 20px;
+    
+        .left{
+            display: flex; 
+            align-items: center;
+            
+            img{
+               
+                height: 77.5px;
+                width: 153.5px;
+                margin-right: 40px;
+                margin-top: -30px;
+                cursor: pointer;
+
+                @media (min-width: 1449px) {
+                    height: 103.3px;
+                    width: 204.67px;
+                  }
+            }
+    
+            span{
+                margin-right: 20px;
+                cursor: pointer; 
+            }
+        }
+    
+        .right{
+            display: flex; 
+            align-items: center;
+    
+            .icon{
+                margin: 0 15px;
+                cursor: pointer;
+            }
+        
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+    
+            span{
+                margin-right: 10px;
+                cursor: pointer; 
+            }
+            
+            .profile{
+                .options{
+                    display:none;
+                }
+    
+                &:hover{
+                    .icon{
+                        transform: rotate(0.5turn);
+                        -ms-transform: rotate(0.5turn) ;
+                        transition: transform .2s ease-in;        
+                    }
+    
+                    .options{
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        transform:  translateX(-120px);
+                        
+    
+                        .option-icon{
+                          margin-left: 120px;
+                          margin-bottom: -10px;
+                        }
+    
+                        .menu{
+                            background: rgb(0, 0, 0, 0.3);
+                            border-radius: 2px;
+                            padding: 5px;
+                            width: 180px;
+                            display:flex;
+                            flex-direction: column;
+    
+                            hr{
+                                width: 100%;
+                            }
+                            
+                            span{
+                                padding: 5px;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
